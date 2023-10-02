@@ -33,7 +33,6 @@
             capnhap = new Button();
             panel2 = new Panel();
             label1 = new Label();
-            tendangnhap1 = new TextBox();
             panel5 = new Panel();
             matkhaucu = new Label();
             textBox2 = new TextBox();
@@ -46,6 +45,7 @@
             panel6 = new Panel();
             matkhaumoi = new Label();
             textBox3 = new TextBox();
+            tendangnhap1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
@@ -98,8 +98,8 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaption;
-            panel2.Controls.Add(label1);
             panel2.Controls.Add(tendangnhap1);
+            panel2.Controls.Add(label1);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(605, 71);
@@ -114,14 +114,6 @@
             label1.Size = new Size(163, 28);
             label1.TabIndex = 2;
             label1.Text = "Tên đăng nhập :";
-            // 
-            // tendangnhap1
-            // 
-            tendangnhap1.Location = new Point(220, 18);
-            tendangnhap1.Name = "tendangnhap1";
-            tendangnhap1.Size = new Size(347, 23);
-            tendangnhap1.TabIndex = 1;
-            tendangnhap1.TextChanged += textBox1_TextChanged;
             // 
             // panel5
             // 
@@ -233,6 +225,14 @@
             textBox3.Size = new Size(347, 23);
             textBox3.TabIndex = 1;
             // 
+            // tendangnhap1
+            // 
+            tendangnhap1.Location = new Point(220, 26);
+            tendangnhap1.Name = "tendangnhap1";
+            tendangnhap1.Size = new Size(345, 23);
+            tendangnhap1.TabIndex = 3;
+            tendangnhap1.TextChanged += tendangnhap1_TextChanged;
+            // 
             // Thongtincanhan
             // 
             AcceptButton = capnhap;
@@ -267,7 +267,6 @@
 
         private Panel panel1;
         private Panel panel2;
-        private TextBox tendangnhap1;
         private Panel panel6;
         private Label matkhaumoi;
         private TextBox textBox3;
@@ -283,5 +282,6 @@
         private TextBox tenhienthi;
         public Button capnhap;
         public Button thoat;
+        private TextBox tendangnhap1;
     }
 }

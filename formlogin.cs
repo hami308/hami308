@@ -39,9 +39,9 @@
                 {
                     MessageBox.Show("Đăng nhập thành công", "Thông báo");
                     Form formchinh = new formchinh();
-                    this.Hide();
+                    this.Hide();//ẩn cửa sổ hiện tại, cửa sổ chứa đoạn mã này
                     formchinh.ShowDialog();
-                    this.Show();
+                    this.Show();//quay lại form bị ẩn bởi lệnh hide()
                 }
                 else
                     MessageBox.Show("Vui lòng nhập lại thông tin", "THÔNG BÁO");

@@ -50,5 +50,10 @@ namespace GiaoDien_qlpks
             danhsachkhachhang.ShowDialog();
             this.Show();
         }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,6 +35,7 @@
             chinhsua = new Button();
             them = new Button();
             panel2 = new Panel();
+            tbtenkhachhang = new TextBox();
             panel7 = new Panel();
             tbidphong = new TextBox();
             label4 = new Label();
@@ -45,7 +46,6 @@
             tbmakhachhang = new TextBox();
             makhachhang = new Label();
             button1 = new Button();
-            tbtenkhachhang = new TextBox();
             panel5 = new Panel();
             tbsđt = new TextBox();
             label2 = new Label();
@@ -131,16 +131,25 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(tbtenkhachhang);
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(button1);
-            panel2.Controls.Add(tbtenkhachhang);
             panel2.Location = new Point(422, 16);
             panel2.Name = "panel2";
             panel2.Size = new Size(377, 418);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
+            // 
+            // tbtenkhachhang
+            // 
+            tbtenkhachhang.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbtenkhachhang.Location = new Point(14, 13);
+            tbtenkhachhang.Name = "tbtenkhachhang";
+            tbtenkhachhang.Size = new Size(244, 29);
+            tbtenkhachhang.TabIndex = 5;
+            tbtenkhachhang.TextChanged += tbtenkhachhang_TextChanged;
             // 
             // panel7
             // 
@@ -184,6 +193,7 @@
             tbtenkhach.Name = "tbtenkhach";
             tbtenkhach.Size = new Size(203, 23);
             tbtenkhach.TabIndex = 1;
+            tbtenkhach.TextChanged += tbtenkhach_TextChanged;
             // 
             // label1
             // 
@@ -235,14 +245,6 @@
             button1.TabIndex = 1;
             button1.Text = "Tìm";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // tbtenkhachhang
-            // 
-            tbtenkhachhang.Location = new Point(13, 17);
-            tbtenkhachhang.Name = "tbtenkhachhang";
-            tbtenkhachhang.Size = new Size(215, 23);
-            tbtenkhachhang.TabIndex = 0;
-            tbtenkhachhang.TextChanged += textBox1_TextChanged;
             // 
             // panel5
             // 
@@ -336,7 +338,6 @@
         private Button them;
         private Panel panel2;
         private DataGridView dataGridView1;
-        private TextBox tbtenkhachhang;
         private Panel panel3;
         private Label makhachhang;
         private Button button1;
@@ -353,5 +354,6 @@
         private Panel panel7;
         private TextBox tbidphong;
         private Label label4;
+        private TextBox tbtenkhachhang;
     }
 }

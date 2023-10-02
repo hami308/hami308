@@ -17,10 +17,6 @@ namespace GiaoDien_qlpks
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -38,6 +34,11 @@ namespace GiaoDien_qlpks
         }
 
         private void capnhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tendangnhap1_TextChanged(object sender, EventArgs e)
         {
 
         }

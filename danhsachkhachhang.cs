@@ -40,12 +40,6 @@ namespace GiaoDien_qlpks
             }
         }
 
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -53,7 +47,7 @@ namespace GiaoDien_qlpks
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void tbmakhachhang_TextChanged(object sender, EventArgs e)
@@ -73,6 +67,16 @@ namespace GiaoDien_qlpks
                 tbidphong.Text = row.Cells["IDPHONG"].Value.ToString();
                 // "Tên_Cột" là tên của cột mà bạn muốn lấy dữ liệu từ đó
             }
+        }
+
+        private void tbtenkhachhang_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbtenkhach_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
